@@ -1,6 +1,6 @@
 # _Word Frequency_
 
-####_A basic app that returns how frequently a word appears in a given string. 09/14/2016_
+####_A basic app that returns how frequently a word appears in a given string. 09/15/2016_
 
 #### By _**Anand Angalig**_
 
@@ -35,7 +35,7 @@ _The user inputs both the word and the string of words to check. The application
 
 * _User enters a word to search in a string without a match_
  * _IN: "apple" in "orange"_
- * _OUT: There were no matches found_
+ * _OUT: Repeated 0 times. There were no matches found_
 
 * _User enters a word to search in a string with a match_
  * _IN:  "apple" in "apple"_
@@ -51,7 +51,7 @@ _The user inputs both the word and the string of words to check. The application
 
 * _User enters a word to search within a paragraph with repeated matches_
  * _IN: "apple" in "In taste an apple is tasty and juicy, and has various tastes from sour to sweet. One can eat an apple raw, cooked, or baked, and it can be used in various dishes, such as apple sauce apple compote, apple pie, apple strudel, etc."_
- * _OUT: Repeated 6 time_
+ * _OUT: Repeated 6 times_
 
 ## Known Bugs
 
