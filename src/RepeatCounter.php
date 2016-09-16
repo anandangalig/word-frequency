@@ -5,7 +5,7 @@
         private $repeats;
 
         function __construct($search_word, $search_text)
-        }
+        {
             $this->search_word = $search_word;
             $this->search_text = $search_text;
         }
@@ -38,14 +38,10 @@
         function countRepeats()
         {
             $repeat_count = 0;
-            $text = $this->search_text;
-            $word = $this->search_word;
-
-            if($word === $text)
+            if($this->search_word === $this->search_text)
             {
                 $repeat_count += 1;
             }
-            
             return $repeat_count;
         }
     }

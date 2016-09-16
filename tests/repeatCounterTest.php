@@ -3,7 +3,7 @@
 
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
-        function no_match()
+        function test_no_match()
         {
             //Arrange
             $input1 = "apple";
@@ -13,7 +13,7 @@
             //Act
             $result = $test_RepeatCounter->countRepeats();
             $desired_result = 0;
-            
+
             //Assert
             $this->assertEquals($desired_result, $result);
         }
