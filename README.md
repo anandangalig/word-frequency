@@ -1,13 +1,13 @@
 # _Word Frequency_
 
-####_A basic app that returns how frequently a word appears in a given string. 09/15/2016_
+####_A basic app that returns how frequently a word appears in a given string. 09/16/2016_
 
 #### By _**Anand Angalig**_
 
 
 ## Description
 
-_The user inputs both the word and the string of words to check. The application will check for full word matches only and output the number of times the word was repeated._
+_The user inputs both the word and the string of words to check within. The application will search for full word matches only and output the number of times the word was repeated._
 
 
 ## Setup/Installation Requirements

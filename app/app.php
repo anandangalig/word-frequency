@@ -14,8 +14,11 @@
         $number_of_repeats = $new_count->countRepeats();
         $input1 = $new_count->getSearchWord();
         $input2 = $new_count->getSearchText();
+        //These 2 lines will avoid having more than 1 word to be searched for:
+        $input1_exploded = explode(" ", $_GET["input_word"]);
+        $input1_count = count($input1_exploded);
 
-        return $app["twig"]->render("results.html.twig", array("repeat" => $number_of_repeats, "word" => $input1, "text" => $input2));
+        return $app["twig"]->render("results.html.twig", array("repeat" => $number_of_repeats, "word" => $input1, "text" => $input2, "word_count" => $input1_count));
     });
 
     return $app;
