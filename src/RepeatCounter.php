@@ -2,7 +2,6 @@
     class RepeatCounter {
         private $search_word;
         private $search_text;
-        private $repeats;
 
         function __construct($search_word, $search_text)
         {
@@ -14,33 +13,25 @@
         {
             return $this->search_word;
         }
-        function setSearchWord($new_search_word)
-        {
-            $this->search_word = (string) $new_search_word;
-        }
+
         function getSearchText()
         {
             return $this->search_text;
-        }
-        function setSearchText($new_search_text)
-        {
-            $this->search_text = (string) $new_search_text;
-        }
-        function getRepeats()
-        {
-            return $this->repeats;
-        }
-        function setRepeats($new_repeats)
-        {
-            $this->repeats = (string) $new_repeats;
         }
 
         function countRepeats()
         {
             $repeat_count = 0;
-            if($this->search_word === $this->search_text)
+            $input1_uniform = strtolower($this->search_word);
+            $input2_uniform = strtolower($this->search_text);
+
+            $input2_exploded = explode(" ", $input2_uniform);
+            foreach($input2_exploded as $potential_match)
             {
-                $repeat_count += 1;
+                if($input1_uniform === $potential_match)
+                {
+                    $repeat_count += 1;
+                }
             }
             return $repeat_count;
         }
