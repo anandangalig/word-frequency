@@ -7,15 +7,15 @@
     <body>
         <div class="container jumbotron text-center">
             {% if word_count > 1 %}
-            <em><h2>Please enter only 1 word at a time and try again!</h2></em>
+                <em><h2>Please enter only 1 word at a time and try again!</h2></em>
             {% else %}
-            <h1>Here are your results:</h1><hr>
-            <h2>You searched for <strong>{{word}}</strong> in: </h2>
-            <h3>{{text}}</h3><hr>
+                <h1>Here are your results:</h1><hr>
+                <h2>You searched for <strong>{{word}}</strong> in: </h2>
+                <h3>{{text}}</h3><hr>
                 {% if repeat == 1 %}
-                <h1>It was repeated {{repeat}} time!</h1>
+                    <h1>It was repeated {{repeat}} time!</h1>
                 {%  else %}
-                <h1>It was repeated {{repeat}} times!</h1>
+                    <h1>It was repeated {{repeat}} times!</h1>
                 {% endif %}
             {% endif %}
             <a href="/" role="button" class="btn btn-primary">Go Back</a>
